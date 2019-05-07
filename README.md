@@ -89,4 +89,11 @@ Desarrollamos el Programa en c++, junto con la libreria OpenMP para paralelizar 
   | USUARIO |OPCION (distancia)| K | N |TIEMPO DE CONSULTA (segundos)|
 | ----- | ---- | ---- | ---- | ---- |
 | 16006 | -1(pearson) | 5 | 10 | 67.2195|
+| 283228 | -2(coseno) | 8 | 10 | 74.0309 |
+| 30503 | 2(euclideana) | 10 | 10 | 34.8503 |
+| 4598 | -1(pearson) |  10| 10 | 34.9638 |
+| 16006 | -2(coseno) | 5 | 10 | 574.721 |
+| 283228 | -2(coseno) | 8 | 10 | 76.1684s |
+| 30503 | -2(coseno) | 2 | 10 | 35.7565 |
+| 4598 | -2(coseno) | 10 | 10 | 52.7527 |
 ## informe

@@ -84,7 +84,7 @@ Desarrollamos el Programa en c++, junto con la libreria OpenMP para paralelizar 
       - seguido por la recomendacion de peliculas con nombre y puntaje
    como ultimo en la penultima linea antes de la linea punteada **************
    tenemos el tiempo de consulta que varia dependiendo de cada usuario, para este ejemplo obtuvimos 67.2195s para la obtencion de los knn y la recomendacion
-   **El archivo output contiene el resultado de todas las pruebas, demaciado grande para explicar mostrar cada una**
+   **El archivo output contiene el resultado de todas las pruebas, demaciado grande para mostrar cada una**
 ###### Conclucion
   | USUARIO |OPCION (distancia)| K | N |TIEMPO DE CONSULTA (segundos)|
 | ----- | ---- | ---- | ---- | ---- |
@@ -96,4 +96,20 @@ Desarrollamos el Programa en c++, junto con la libreria OpenMP para paralelizar 
 | 283228 | -2(coseno) | 8 | 10 | 76.1684s |
 | 30503 | -2(coseno) | 2 | 10 | 35.7565 |
 | 4598 | -2(coseno) | 10 | 10 | 52.7527 |
+Los primeros 4 usuarios y distancias estas hechas para comprobar los knn de cada usario, los 4 usuarios siguientes realizaron el algoritmo knn con la distancia coseno, ya que al analizar la base de datos contiene datos muy esparsos lo que nos da distancias iguales, de 3 a 15 primeros usarios tienen 1 como distancia, con la distancia de pearson, asi que preferimos obtar por la distancia del coseno ya que tiene mejores resultados para bases de datos esparsas.
+###### Recomendaciones con la Distancia del Coseno
+- para el usuaro 16006
+                      ```php
+                      Tommy Boy (1995) punt 5
+                      Rob Roy (1995) punt 5
+                      "English Patient punt 5
+                      Boyhood (2014) punt 5
+                      "Grand Budapest Hotel punt 5
+                      Bananas (1971) punt 5
+                      "Hobbit: The Desolation of Smaug punt 5
+                      Swingers (1996) punt 5
+                      World War Z (2013) punt 5
+                      Mary Poppins (1964) punt 4.5
+                      la consulta a tardado: 574.721s```
+
 ## informe

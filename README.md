@@ -2,8 +2,12 @@
    **Edson Lipa y Christian Condori**
 #### replicar o ejecutar
 1. para poder replicar el proyecto , se debe descargar la base de datos [Movielens](https://grouplens.org/datasets/movielens/latest/) y descomprimirla. 
-1. dar permisos al ejecutable ```chmod +x test
-1. ejecujar el programa con el input y obtener los archivos en arvhivo output ```./test < input > output
+1. dar permisos al ejecutable 
+    
+        chmod +x test
+1. ejecujar el programa con el input y obtener los archivos en arvhivo output 
+         
+         ./test < input > output
 ## Base de Datos
    Utilizamos la base de datos [Movielens](https://grouplens.org/datasets/movielens/latest/).
    Version Completa : 27,000,000 calificaciones y 1,100,000 aplicaciones de etiquetas aplicadas a 58,000 películas por 280,000 usuarios. Incluye datos del genoma de la etiqueta con 14 millones de puntuaciones de relevancia en 1.100 etiquetas. Última actualización 9/2018.

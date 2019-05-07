@@ -100,7 +100,9 @@ Los primeros 4 usuarios y distancias estas hechas para comprobar los knn de cada
 | 4598 | -2(coseno) | 10 | 10 | 52.7527 |
 ###### Recomendaciones con la Distancia del Coseno
 - para el usuaro 16006
-  ![salida para el usuario 16006][images/16006.png]
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+
+  ![alt text][images/16006.png]
         Tommy Boy (1995) punt 5
         Rob Roy (1995) punt 5
         "English Patient punt 5

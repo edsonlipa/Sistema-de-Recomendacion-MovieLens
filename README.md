@@ -102,7 +102,7 @@ Los primeros 4 usuarios y distancias estas hechas para comprobar los knn de cada
 - para el usuaro 16006
 ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
 
- ![alt text][images/16006.png]
+ ![alt text](images/16006.png)
  
         Tommy Boy (1995) punt 5
         Rob Roy (1995) punt 5

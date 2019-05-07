@@ -5,37 +5,39 @@
 1. dar permisos al ejecutable 
     
         chmod +x test
-1. ejecujar el programa con el input y obtener los archivos en arvhivo output 
+1. Ejecujar el programa con el input y obtener los archivos en arvhivo output 
          
          ./test < input > output
 ## Base de Datos
    Utilizamos la base de datos [Movielens](https://grouplens.org/datasets/movielens/latest/).
-   Version Completa : 27,000,000 calificaciones y 1,100,000 aplicaciones de etiquetas aplicadas a 58,000 películas por 280,000 usuarios. Incluye datos del genoma de la etiqueta con 14 millones de puntuaciones de relevancia en 1.100 etiquetas. Última actualización 9/2018.
+   Versión Completa : 27,000,000 calificaciones y 1,100,000 aplicaciones de etiquetas aplicadas a 58,000 películas por 280,000 usuarios. Incluye datos del genoma de la etiqueta con 14 millones de puntuaciones de relevancia en 1.100 etiquetas. Última actualización 9/2018.
+
 
     ml-latest.zip  (tamaño: 265 MB)
 
-## Alamcenamiento y levantamiento de la base de datos
-   Nosotos Logramos Cargar La base de datos de movielens de 27 millones, en 110 segundos y ocupando un espacio en memoria ram de 2.1 Gb 
-## Implementacion del KNN (Proceso)
-  Estamos utlizando las Distancias Vistas en clase:
-  - Distancia Ecludeana
+
+## Almacenamiento y levantamiento de la base de datos
+   Nosotros Logramos Cargar La base de datos de movielens de 27 millones, en 110 segundos y ocupando un espacio en memoria ram de 2.1 Gb 
+## Implementación del KNN (Proceso)
+  Estamos utilizando las Distancias Vistas en clase:
+  - Distancia Euclidiana
   - Distancia de Manhattan
   - Correlacion de Pearson
   - Distancia del Coseno
   para obtener los Knn obtenemos las distancias de un usuario dado con cada uno de los usuarios existentes que tengan recomendaciones. 
-## Lenguaje de Programacion + Librerias
+## Lenguaje de Programación + Librarías
 Desarrollamos el Programa en c++, junto con la libreria OpenMP para paralelizar el algoritmo KNN
-## Proceso del Sistema de Recomendacion
-1. Primero cargamos la data en un map de map esto nos demora 110 seg aproximadamente, y ocpupamos 2.1 GB s 
-1. Despues dado un usuario dado y un k para los primero k usuarios
-1. en este punto podemos hacer una recomendacion de pelicualas al usario o dado una pelicula podemos dar una proyeccion de la puntuacion de esta pelicula segun los usarios compatibles que ya hayan visto dicha pelicula.
+## Proceso del Sistema de Recomendación
+1. Primero cargamos la data en un map de map esto nos demora 110 seg aproximadamente, y ocupamos 2.1 GB s 
+1. Después, dado un usuario dado y un k para los primero k usuarios
+1. en este punto podemos hacer una recomendación de películas al usario o dado una película podemos dar una proyección de la puntuación de esta película según los usarios compatibles que ya hayan visto dicha película.
 ## Pruebas
 ### Input 
    En el archivo input podemos ver los casos de prueba separados por espacios
    - El primer codigo, el el codigo del usuario
-   - Seguido por la distancia >pearson coseno Eclideana o Manhattan
+   - Seguido por la distancia >pearson coseno Euclidiana o Manhattan
    - Enseguida los k usuarios (para el algoritmo de knn)
-   - por ultimo las  n peliculas a recomendar (si no se tiene suficientes peliculas se recomiendas todas las que resulten)
+   - por ultimo, las  n peliculas a recomendar (si no se tiene suficientes películas se recomienda todas las que resulten)
 ##### Ejemplo
        16006
        -1 5 10
@@ -82,6 +84,7 @@ Desarrollamos el Programa en c++, junto con la libreria OpenMP para paralelizar 
       la consulta a tardado: 67.2195s
       TAM: 10
 
+
    En el Archivo Output podemos encontrar la salida de los casos de prueba
       - aqui podemos observar que el usario 1006
       - con la distacia de pearson 
@@ -89,17 +92,18 @@ Desarrollamos el Programa en c++, junto con la libreria OpenMP para paralelizar 
       - 10 como el numero de peliculas a recomendar 
       - seguido de la imprecion de los k usarios mas cercanos      
       - seguido por la recomendacion de peliculas con nombre y puntaje
-   como ultimo en la penultima linea antes de la linea punteada **************
-   tenemos el tiempo de consulta que varia dependiendo de cada usuario, para este ejemplo obtuvimos 67.2195s para la obtencion de los knn y la recomendacion
-   **El archivo output contiene el resultado de todas las pruebas, demaciado grande para mostrar cada una**
-###### Conclucion
-Los primeros 4 usuarios y distancias estas hechas para comprobar los knn de cada usario, los 4 usuarios siguientes realizaron el algoritmo knn con la distancia coseno, ya que al analizar la base de datos contiene datos muy esparsos lo que nos da distancias iguales, de 3 a 15 primeros usarios tienen 1 como distancia, con la distancia de pearson, asi que preferimos obtar por la distancia del coseno ya que tiene mejores resultados para bases de datos esparsas.
+   como ultimo en la penúltima linea antes de la linea punteada **************
+   tenemos el tiempo de consulta que varia dependiendo de cada usuario, para este ejemplo obtuvimos 67.2195s para la obtención de los knn y la recomendación
+   **El archivo output contiene el resultado de todas las pruebas, demasiado grande para mostrar cada una**
+###### Conclusión
+Los primeros 4 usuarios y distancias estas hechas para comprobar los knn de cada usario, los 4 usuarios siguientes realizaron el algoritmo knn con la distancia coseno, ya que al analizar la base de datos contiene datos muy esparsos lo que nos da distancias iguales, de 3 a 15 primeros usarios tienen 1 como distancia, con la distancia de pearson, asi que preferimos optar por la distancia del coseno ya que tiene mejores resultados para bases de datos esparsas.
+
 
 | USUARIO |OPCION (distancia)| K | N |TIEMPO DE CONSULTA (segundos)|
 | ----- | ---- | ---- | ---- | ---- |
 | 16006 | -1(pearson) | 5 | 10 | 67.2195|
 | 283228 | -2(coseno) | 8 | 10 | 74.0309 |
-| 30503 | 2(euclideana) | 10 | 10 | 34.8503 |
+| 30503 | 2(euclidiana) | 10 | 10 | 34.8503 |
 | 4598 | -1(pearson) |  10| 10 | 34.9638 |
 | 16006 | -2(coseno) | 5 | 10 | 574.721 |
 | 283228 | -2(coseno) | 8 | 10 | 76.1684s |
@@ -107,6 +111,7 @@ Los primeros 4 usuarios y distancias estas hechas para comprobar los knn de cada
 | 4598 | -2(coseno) | 10 | 10 | 52.7527 |
 ###### Recomendaciones con la Distancia del Coseno
 - para el usuaro 16006
+
 
  ![salida completa para el 16006](images/16006.png)
    
@@ -122,7 +127,9 @@ Los primeros 4 usuarios y distancias estas hechas para comprobar los knn de cada
         Mary Poppins (1964) punt 4.5
         la consulta a tardado: 574.721s
 
+
 - para el usuaro 283228
+
 
  ![salida completa para el 283228](images/283228.png)
        
@@ -140,7 +147,9 @@ Los primeros 4 usuarios y distancias estas hechas para comprobar los knn de cada
       
 - para el usuaro 30503
 
+
  ![salida completa para el 30503](images/30503.png)
+
 
     Billy Madison (1995) punt 5
     Apollo 13 (1995) punt 5
@@ -155,7 +164,10 @@ Los primeros 4 usuarios y distancias estas hechas para comprobar los knn de cada
     la consulta a tardado: 35.7565s
 
 
+
+
 - para el usuaro 4598
+
 
  ![salida completa para el 4598](images/4598.png)
  
@@ -170,6 +182,7 @@ Los primeros 4 usuarios y distancias estas hechas para comprobar los knn de cada
     Dead Poets Society (1989) punt 4.5
     Star Wars: Episode V - The Empire Strikes Back (1980) punt 4.5
     la consulta a tardado: 52.7527s
+
 
    
 ## informe 

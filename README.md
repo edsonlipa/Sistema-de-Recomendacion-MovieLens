@@ -100,10 +100,9 @@ Los primeros 4 usuarios y distancias estas hechas para comprobar los knn de cada
 | 4598 | -2(coseno) | 10 | 10 | 52.7527 |
 ###### Recomendaciones con la Distancia del Coseno
 - para el usuaro 16006
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
 
- ![alt text](images/16006.png)
- 
+ ![salida completa para el 16006](images/16006.png)
+   
         Tommy Boy (1995) punt 5
         Rob Roy (1995) punt 5
         "English Patient punt 5
@@ -116,4 +115,54 @@ Los primeros 4 usuarios y distancias estas hechas para comprobar los knn de cada
         Mary Poppins (1964) punt 4.5
         la consulta a tardado: 574.721s
 
+- para el usuaro 283228
+
+ ![salida completa para el 283228](images/283228.png)
+       
+      "Godfather: Part II punt 5
+      "Princess Bride punt 5
+      Cinema Paradiso (Nuovo cinema Paradiso) (1989) punt 5
+      Bambi Meets Godzilla (1969) punt 5
+      Monty Python and the Holy Grail (1975) punt 5
+      Dial M for Murder (1954) punt 5
+      "Fish Called Wanda punt 5
+      "Murder punt 5
+      Gravity (2013) punt 5
+      "Sound of Music punt 5
+      la consulta a tardado: 76.1684s
+      
+- para el usuaro 30503
+
+ ![salida completa para el 30503](images/30503.png)
+
+    Billy Madison (1995) punt 5
+    Apollo 13 (1995) punt 5
+    Sneakers (1992) punt 5
+    Dead Poets Society (1989) punt 5
+    Annie Hall (1977) punt 5
+    "Third Man punt 5
+    Bonnie and Clyde (1967) punt 5
+    "Great Escape punt 4.5
+    Chinatown (1974) punt 4
+    Star Trek V: The Final Frontier (1989) punt 2
+    la consulta a tardado: 35.7565s
+
+
+- para el usuaro 4598
+
+ ![salida completa para el 4598](images/4598.png)
+ 
+    Léon: The Professional (a.k.a. The Professional) (Léon) (1994) punt 5
+    Goodfellas (1990) punt 5
+    Monty Python and the Holy Grail (1975) punt 5
+    Whiplash (2014) punt 5
+    Birdman: Or (The Unexpected Virtue of Ignorance) (2014) punt 5
+    "Grand Budapest Hotel punt 5
+    Prisoners (2013) punt 5
+    "Shawshank Redemption punt 4.75
+    Dead Poets Society (1989) punt 4.5
+    Star Wars: Episode V - The Empire Strikes Back (1980) punt 4.5
+    la consulta a tardado: 52.7527s
+
+   
 ## informe

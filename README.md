@@ -21,7 +21,59 @@ Desarrollamos el Programa en c++, junto con la libreria OpenMP para paralelizar 
    - Seguido por la distancia >pearson coseno Eclideana o Manhattan
    - Enseguida los k usuarios (para el algoritmo de knn)
    - por ultimo las  n peliculas a recomendar (si no se tiene suficientes peliculas se recomiendas todas las que resulten)
-#### Ejemplo
+##### Ejemplo
+       16006
+       -1 5 10
+      283228
+       -2 8 10
+      30503
+       2 10 10
+      4598
+       -1 10 10
       16006
-      -1 5 10
+       -2 5 10
+      283228
+       -2 8 10
+      30503
+       2 10 10
+      4598
+       -2 10 10
+### Output
+      la carga de datos a tardado: 111.889s
+      START: 
+      16006
+      option: -1
+       K : 5
+      Recomendacion: 10
+      KNNN
+      1.00003  --  123250
+      1.00001  --  136420
+      1.00001  --  130242
+      1.00001  --  140141
+      1.00001  --  51639
+      207854
+      RECOM : knn size:  207854
+      RECOMENDACION 10 tam 
+      Dancer in the Dark (2000) punt 5
+      "Equalizer punt 5
+      Simple Simon (I rymden finns inga känslor) (2010) punt 4.5
+      Juno (2007) punt 4.5
+      "Beautiful Mind punt 4.5
+      Interstellar (2014) punt 4.5
+      Schindler's List (1993) punt 4
+      Needful Things (1993) punt 3
+      Sherlock: The Abominable Bride (2016) punt 2.5
+      "Streetcar Named Desire punt 2
+      la consulta a tardado: 67.2195s
+      TAM: 10
+
+   En el Archivo Output podemos encontrar la salida de los casos de prueba
+      - aqui podemos observar que el usario 1006
+      - con la distacia de pearson 
+      - un K de 5
+      - 10 como el numero de peliculas a recomendar 
+      - seguido de la imprecion de los k usarios mas cercanos      
+      - seguido por la recomendacion de peliculas con nombre y puntaje
+   como ultimo en la penultima linea antes de la linea punteada **************
+   tenemos el tiempo de consulta que varia dependiendo de cada usuario, para este ejemplo obtuvimos 67.2195s para la obtencion de los knn y la recomendacion
 ## informe

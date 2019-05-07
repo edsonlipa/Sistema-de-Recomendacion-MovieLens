@@ -21,4 +21,7 @@ Desarrollamos el Programa en c++, junto con la libreria OpenMP para paralelizar 
    - Seguido por la distancia >pearson coseno Eclideana o Manhattan
    - Enseguida los k usuarios (para el algoritmo de knn)
    - por ultimo las  n peliculas a recomendar (si no se tiene suficientes peliculas se recomiendas todas las que resulten)
+#### Ejemplo
+      16006
+      -1 5 10
 ## informe

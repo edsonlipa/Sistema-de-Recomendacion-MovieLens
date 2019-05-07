@@ -1,6 +1,6 @@
 # Sistema-de-Recomendacion-MovieLens
 ## Alamcenamiento y levantamiento de la base de datos
-    Nosotos Logramos Cargar La base de datos de movielens de 27 millones, en 110 segundos y ocupando un espacio en memoria ram de 2.1 Gb 
+   Nosotos Logramos Cargar La base de datos de movielens de 27 millones, en 110 segundos y ocupando un espacio en memoria ram de 2.1 Gb 
 ## Implementacion del KNN (Proceso)
   Estamos utlizando las Distancias Vistas en clase:
   - Distancia Ecludeana

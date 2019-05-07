@@ -84,4 +84,9 @@ Desarrollamos el Programa en c++, junto con la libreria OpenMP para paralelizar 
       - seguido por la recomendacion de peliculas con nombre y puntaje
    como ultimo en la penultima linea antes de la linea punteada **************
    tenemos el tiempo de consulta que varia dependiendo de cada usuario, para este ejemplo obtuvimos 67.2195s para la obtencion de los knn y la recomendacion
+   **El archivo output contiene el resultado de todas las pruebas, demaciado grande para explicar mostrar cada una**
+###### Conclucion
+  | USUARIO |OPCION (distancia)| K | N |TIEMPO DE CONSULTA (segundos)|
+| ----- | ---- | ---- | ---- | ---- |
+| 16006 | -1(pearson) | 5 | 10 | 67.2195|
 ## informe

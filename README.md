@@ -165,4 +165,5 @@ Los primeros 4 usuarios y distancias estas hechas para comprobar los knn de cada
     la consulta a tardado: 52.7527s
 
    
-## informe
+## informe 
+  para un informe mas detallado de la estructura puede revisar [ informe ](paper.pdf)

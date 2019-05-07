@@ -1,4 +1,13 @@
 # Sistema-de-Recomendacion-MovieLens
+   **Edson Lipa y Christian Condori**
+   
+## Base de Datos
+   Utilizamos la base de datos [Movielens](https://grouplens.org/datasets/movielens/latest/).
+   Version Completa : 27,000,000 calificaciones y 1,100,000 aplicaciones de etiquetas aplicadas a 58,000 películas por 280,000 usuarios. Incluye datos del genoma de la etiqueta con 14 millones de puntuaciones de relevancia en 1.100 etiquetas. Última actualización 9/2018.
+
+README.html
+ml-latest.zip  (tamaño: 265 MB)
+
 ## Alamcenamiento y levantamiento de la base de datos
    Nosotos Logramos Cargar La base de datos de movielens de 27 millones, en 110 segundos y ocupando un espacio en memoria ram de 2.1 Gb 
 ## Implementacion del KNN (Proceso)
